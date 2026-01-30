@@ -70,19 +70,18 @@
     </section>
 
     <!-- CAROUSEL -->
-    <section id="carousel" class="container">
-      <h2>Featured Properties</h2>
+    <div class="carousel">
+  <div class="slides">
+    <img src="carousel1.png" alt="Property Image 1">
+    <img src="carousel2.png" alt="Property Image 2">
+    <img src="carousel3.png" alt="Property Image 3">
+    <img src="carousel4.png" alt="Property Image 4">
+    <img src="carousel5.png" alt="Property Image 5">
+  </div>
 
-      <div class="carousel">
-        <div class="slides">
-
-          <img src="carousel1.png" alt="Property Image 1">
-          <img src="carousel2.png" alt="Property Image 2">
-          <img src="carousel3.png" alt="Property Image 3">
-          <img src="carousel4.png" alt="Property Image 4">
-          <img src="carousel5.png" alt="Property Image 5">
-
-        </div>
+  <button class="carousel-btn prev">&#10094;</button>
+  <button class="carousel-btn next">&#10095;</button>
+</div>
 
         <button class="carousel-btn prev">&#10094;</button>
         <button class="carousel-btn next">&#10095;</button>
@@ -246,6 +245,22 @@
     nextBtn.addEventListener('click', () => showSlide(index + 1));
     setInterval(() => showSlide(index + 1), 5000);
   </script>
+const slides = document.querySelector('.slides');
+const images = document.querySelectorAll('.slides img');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let index = 0;
+
+function showSlide(i) {
+  index = (i + images.length) % images.length;
+  slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+prevBtn.addEventListener('click', () => showSlide(index - 1));
+nextBtn.addEventListener('click', () => showSlide(index + 1));
+
+setInterval(() => showSlide(index + 1), 5000);
 
 </body>
 </html>
