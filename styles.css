@@ -1,10 +1,8 @@
-/* ================================
-   HANO — Global Theme Variables
-   ================================ */
+/* GLOBAL THEME */
 :root {
-  --primary: #0b6b3a;        /* Main Green */
-  --primary-light: #3fae6b;  /* Light Green */
-  --accent: #f5c842;         /* Bright Gold */
+  --primary: #0b6b3a;
+  --primary-light: #3fae6b;
+  --accent: #f5c842;
   --bg: #f5f7fa;
   --text: #222;
   --muted: #666;
@@ -12,41 +10,26 @@
   --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* ================================
-   Base Styles
-   ================================ */
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+  width: min(1100px, 100% - 2rem);
+  margin: 0 auto;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* ================================
-   Header & Navigation
-   ================================ */
+/* HEADER */
 header {
   background: #fff;
   box-shadow: var(--shadow-soft);
   position: sticky;
   top: 0;
   z-index: 100;
-}
-
-.container {
-  width: min(1100px, 100% - 2rem);
-  margin: 0 auto;
 }
 
 .nav {
@@ -58,7 +41,6 @@ header {
 
 .logo img {
   height: 52px;
-  width: auto;
 }
 
 .nav-links {
@@ -92,9 +74,6 @@ header {
   border-radius: 999px;
   background: var(--primary);
   color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 0.9rem;
 }
 
 .nav-cta.landlord {
@@ -102,12 +81,10 @@ header {
   color: var(--primary-light);
 }
 
-/* Mobile nav toggle */
 .nav-toggle {
   display: none;
   background: none;
   border: none;
-  cursor: pointer;
 }
 
 .nav-toggle span {
@@ -142,15 +119,12 @@ header {
   }
 }
 
-/* ================================
-   Hero Section
-   ================================ */
+/* HERO */
 .hero {
   padding: 3.5rem 0 3rem;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 2.5rem;
-  align-items: center;
 }
 
 .hero-tag {
@@ -161,68 +135,76 @@ header {
   border-radius: 999px;
   font-size: 0.8rem;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 .hero h1 {
   margin-top: 1rem;
   font-size: 2.6rem;
-  line-height: 1.2;
 }
 
 .hero p {
   margin-top: 0.9rem;
   color: var(--muted);
-  max-width: 32rem;
 }
 
-.btn-primary {
+.hero-aside {
   background: var(--primary);
   color: #fff;
-  padding: 0.7rem 1.3rem;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  font-size: 0.95rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
 
-.btn-secondary {
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.1);
+.hero-stats {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* CAROUSEL */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  margin-top: 1.5rem;
+}
+
+.carousel .slides {
+  display: flex;
+  width: 500%;
+  transition: transform 0.6s ease;
+}
+
+.carousel img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--accent);
   color: var(--primary);
-  padding: 0.7rem 1.3rem;
-  border-radius: 999px;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
   cursor: pointer;
+  font-size: 1.5rem;
+  opacity: 0.8;
 }
 
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
+.carousel-btn.prev {
+  left: 10px;
 }
 
-/* ================================
-   Section Headings
-   ================================ */
-section {
-  padding: 3rem 0;
+.carousel-btn.next {
+  right: 10px;
 }
 
-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary-light);
-}
-
-.section-intro {
-  color: var(--muted);
-  max-width: 32rem;
-  margin-bottom: 1.5rem;
-}
-
-/* ================================
-   Cards & Grids
-   ================================ */
+/* CARDS */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -243,21 +225,26 @@ section h2 {
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
-/* ================================
-   Contact Section
-   ================================ */
+/* VIDEOS */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.video-grid iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+}
+
+/* CONTACT */
 .contact-grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 2rem;
-}
-
-.contact-grid form label {
-  font-weight: 600;
-  margin-top: 0.5rem;
 }
 
 .contact-grid input,
@@ -266,21 +253,13 @@ section h2 {
   padding: 0.6rem;
   border-radius: var(--radius);
   border: 1px solid rgba(0,0,0,0.15);
-  font-size: 0.9rem;
 }
 
-.contact-grid button {
-  margin-top: 1rem;
-}
-
-/* ================================
-   Footer
-   ================================ */
+/* FOOTER */
 footer {
   background: #fff;
   padding: 1.5rem 0;
   border-top: 1px solid rgba(0,0,0,0.1);
-  font-size: 0.85rem;
-  color: var(--muted);
   text-align: center;
+  color: var(--muted);
 }

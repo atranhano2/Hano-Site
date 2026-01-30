@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Housing Authority of New Orleans (HANO)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo">
+        <img src="HANO LOGO 001.png" alt="Housing Authority of New Orleans Logo" />
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav>
+        <div class="nav-links" id="nav-menu">
+          <a href="#programs">Programs</a>
+          <a href="#eligibility">Eligibility</a>
+          <a href="#announcements">Announcements</a>
+          <a href="#videos">Videos</a>
+          <a href="#contact">Contact</a>
+
+          <a href="https://legacy.hano.org/HousingChoiceConnect/Tenant-Sign-In.aspx" class="nav-cta">
+            Resident Login
+          </a>
+
+          <a href="https://legacy.hano.org/HousingChoiceConnect/Landlord-Sign-In.aspx" class="nav-cta landlord">
+            Landlord Login
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero container">
+      <div>
+        <div class="hero-tag">Official Housing Authority of New Orleans</div>
+        <h1>Safe, Affordable Housing for New Orleans Residents</h1>
+        <p>
+          HANO provides quality housing opportunities for low‑income families, seniors, and individuals across the city.
+        </p>
+
+        <div style="margin-top:1.5rem; display:flex; gap:0.75rem;">
+          <button class="btn-primary">View Programs</button>
+          <button class="btn-secondary">Check Eligibility</button>
+        </div>
+      </div>
+
+      <aside class="hero-aside">
+        <h2>HANO at a Glance</h2>
+        <p>Learn about open waitlists, program availability, and resident services.</p>
+
+        <div class="hero-stats">
+          <div><strong>10,000+</strong><br/>Residents served</div>
+          <div><strong>3–6 months</strong><br/>Avg. processing time</div>
+          <div><strong>Priority</strong><br/>Special needs & emergencies</div>
+          <div><strong>Citywide</strong><br/>Service centers</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- CAROUSEL -->
+    <section id="carousel" class="container">
+      <h2>Featured Properties</h2>
+
+      <div class="carousel">
+        <div class="slides">
+
+          <img src="carousel1.png" alt="Property Image 1">
+          <img src="carousel2.png" alt="Property Image 2">
+          <img src="carousel3.png" alt="Property Image 3">
+          <img src="carousel4.png" alt="Property Image 4">
+          <img src="carousel5.png" alt="Property Image 5">
+
+        </div>
+
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="container">
+      <h2>Housing Programs</h2>
+      <p class="section-intro">Explore HANO’s federal and local housing programs.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="chip">HCV</div>
+          <h3>Housing Choice Voucher Program</h3>
+          <p>Rental assistance for eligible low‑income households.</p>
+        </div>
+
+        <div class="card">
+          <div class="chip">Public Housing</div>
+          <h3>Public Housing Communities</h3>
+          <p>Affordable units managed by HANO across New Orleans.</p>
+        </div>
+
+        <div class="card">
+          <div class="chip">Veterans</div>
+          <h3>Veterans Housing</h3>
+          <p>Supportive housing for veterans in partnership with local agencies.</p>
+        </div>
+
+        <div class="card">
+          <div class="chip">Landlords</div>
+          <h3>Landlord Partnerships</h3>
+          <p>Guaranteed payments and incentives for participating landlords.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELIGIBILITY -->
+    <section id="eligibility" class="container">
+      <h2>Eligibility & How to Apply</h2>
+      <p class="section-intro">General steps for applying to HANO programs.</p>
+
+      <ul>
+        <li>Review income limits based on HUD guidelines.</li>
+        <li>Gather identification and income documentation.</li>
+        <li>Submit an online or in‑person application.</li>
+        <li>Receive confirmation and waitlist placement.</li>
+      </ul>
+    </section>
+
+    <!-- ANNOUNCEMENTS -->
+    <section id="announcements" class="container">
+      <h2>Announcements & Public Notices</h2>
+      <p class="section-intro">Stay updated on waitlists, hearings, and events.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>HCV Waitlist Opening</h3>
+          <p>Applications accepted during designated enrollment periods.</p>
+        </div>
+
+        <div class="card">
+          <h3>Public Hearing</h3>
+          <p>Annual Plan meeting at City Hall.</p>
+        </div>
+
+        <div class="card">
+          <h3>Landlord Incentive Session</h3>
+          <p>Learn about benefits for HANO partner landlords.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEOS -->
+    <section id="videos" class="container">
+      <h2>Videos & Media</h2>
+      <p class="section-intro">Learn more about HANO programs, services, and community initiatives.</p>
+
+      <div class="video-grid">
+
+        <iframe src="https://www.youtube.com/embed/-c9XAsDTITk" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/_VC6lKYgT24" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/vrkbzuotivg" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/S9sGqM7C4ks" allowfullscreen></iframe>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container">
+      <h2>Contact HANO</h2>
+      <p class="section-intro">Reach out for assistance or program information. Services are provided in English.</p>
+
+      <div class="contact-grid">
+        <div>
+          <form>
+            <label>Name</label>
+            <input type="text" required />
+
+            <label>Email</label>
+            <input type="email" required />
+
+            <label>Message</label>
+            <textarea rows="4" required></textarea>
+
+            <button class="btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+
+        <div>
+          <strong>Main Office</strong><br/>
+          4100 Touro Street<br/>
+          New Orleans, LA 70122<br/><br/>
+
+          <strong>Phone</strong><br/>
+          Main: (504) 670‑3300<br/>
+          TTY: (504) 670‑3377<br/><br/>
+
+          <strong>Hours</strong><br/>
+          Monday–Friday, 8:00 AM–5:00 PM<br/><br/>
+
+          <strong>Email & Online Services</strong><br/>
+          General: info@hano.org<br/>
+          Resident Portal: Tenant Sign-In<br/>
+          Landlord Portal: Landlord Sign-In<br/><br/>
+
+          <strong>Language Notice</strong><br/>
+          Services and materials are provided in English.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> The Housing Authority of New Orleans. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.getElementById("nav-menu");
+    navToggle.addEventListener("click", () => navMenu.classList.toggle("open"));
+
+    const slides = document.querySelector('.slides');
+    const images = document.querySelectorAll('.slides img');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let index = 0;
+
+    function showSlide(i) {
+      index = (i + images.length) % images.length;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    prevBtn.addEventListener('click', () => showSlide(index - 1));
+    nextBtn.addEventListener('click', () => showSlide(index + 1));
+    setInterval(() => showSlide(index + 1), 5000);
+  </script>
+
+</body>
+</html>
